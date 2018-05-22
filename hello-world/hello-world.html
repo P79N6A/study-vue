@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<h1 v-once>{{ title }}</h1>
+  		<input type="text" v-on:input="changeTitle">
+  		<p>{{ title }}</p>
+  		<p><a v-bind:href="link">Google</a></p>
+  		<p>{{ sayHello() }}</p>
+  		<hr>
+  		<p v-html="finishedLink"></p>
+	</div>
+
+	<script type="text/javascript" src="hello-world.js"></script>
+</body>
+</html>
+
+
+
+

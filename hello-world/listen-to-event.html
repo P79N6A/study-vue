@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Listen to event</title>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<button v-on:click="increase(2)">click me</button>
+		<p>{{counter}}</p>
+		<p v-on:mousemove="updateCoordinates">
+			Coordinates: {{x}} / {{y}} 
+			<span v-on:mousemove.stop>DEAD SPOT</span>
+		</p>
+		<input type="text" name="" v-on:keyup.enter.space="alertMe">
+	</div>
+<script type="text/javascript" src="listen-to-event.js"></script>
+</body>
+</html>
