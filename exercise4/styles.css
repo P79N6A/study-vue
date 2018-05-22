@@ -25,3 +25,14 @@
 .float{
 	float: right;
 }
+
+.visible{
+	width: 100px;
+	height: 50px;
+}
+
+.progress-bar{
+	width: 200px;
+	height: 20px;
+	border: 1px solid black;
+}
