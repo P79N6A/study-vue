@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>v-if</title>
+	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<p v-if="show">You can see me!</p>
+		<p v-else>You cannot see me!</p>
+		<template v-if="show">
+			<h1>Heading</h1>
+			<p>Inside a template</p>
+		</template>
+		<button @click="show = !show">Switch</button>
+	</div>
+<script type="text/javascript" src="v-if.js"></script>
+</body>
+</html>

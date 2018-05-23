@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>v for loop</title>
+	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+	<ul>
+		<li v-for="ingredient in ingredients" :key="ingredient">{{ ingredient }}</li>
+	</ul>
+	<hr>
+	<ul>
+		<li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
+	</ul>
+	<button @click="ingredients.push('spices')">add new ingredient</button>
+	<hr>
+	<template v-for="(ingredient,i) in ingredients">
+		<h1>{{ingredient}}</h1>
+		<li>{{i}}</li>
+	</template>
+	<hr>
+	<ul>
+		<li v-for="person in persons">
+			<div v-for="(value, key, index) in person">{{ key }}: {{ value }} ({{ index }})</div>
+		</li>
+	</ul>
+	<hr>
+	<div v-for="n in 10">{{ n }}</div>
+</div>
+<script type="text/javascript" src="v-for.js"></script>
+</body>
+</html>
