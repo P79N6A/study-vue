@@ -9,8 +9,6 @@
         computed: {
             ...mapGetters({
                     counter: types.DOUBLE_COUNTER,
-
-
                 }
             ),
         }
